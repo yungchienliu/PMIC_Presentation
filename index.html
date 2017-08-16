@@ -22,6 +22,9 @@
 			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
 			document.getElementsByTagName( 'head' )[0].appendChild( link );
 		</script>
+		<style>
+		ul.my_li {list-style-position:outside;}
+		</style>
 
 		<!--[if lt IE 9]>
 		<script src="lib/js/html5shiv.js"></script>
@@ -35,12 +38,22 @@
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 
-				<section data-transition = "zoom"> <!-- 1/1 -->
-					<h1>目錄</h1>
-					<p>文字</p>
-					<p>連結</p>
-					<p>Extra</p>
-					<p>Math</p>
+				<section> <!-- 1/1 -->
+					<section>
+						<h1 >PMIC Presentation</h1>
+						<img src = "img/buck_layout.png" width = "300">
+						<p>0650181劉詠謙</p>
+						<small style="font-family:courier; font-size:40%;">yungchienliu.github.io/PMIC_Presentation </small>
+					</section>
+					<section> <!-- 1/2 -->
+						<h1>目錄</h1>
+						<ul class ="my_li">
+							<li class = "fragment">一行</li>
+							<li class = "fragment">一行</li>
+							<li class = "fragment">顯示</li>
+						</ul>
+					</section>
+				</section>
 				</section>
 				<section> 
 					<section> <!-- 2/1 --> 
