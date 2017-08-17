@@ -23,7 +23,7 @@
 			document.getElementsByTagName( 'head' )[0].appendChild( link );
 		</script>
 		<style>
-		/*ul.my_li {list-style-position:outside;}
+		/*ul.my_li {list-style-position:outside;}*/
 		.container {
 		    position: relative;
 		}
@@ -32,7 +32,25 @@
 		    position: absolute;
 		    top: 0%;
 		    left:0%;
-		}*/
+		}
+
+		.topright{
+			position: absolute;
+			margin-top: 0%;
+			margin-right: 0%;
+		}
+
+		.downleft{
+			position: absolute;
+			top: 100%;
+			left: 0%;
+		}
+
+		.downright{
+			position: absolute;
+			top: 100%;
+			right: 0%;
+		}
 
 
 		img{
@@ -92,7 +110,7 @@
 						* Logic Gates
 							- OR Gate
 							- AND Gate
-						* Gate Driver
+							- Gate Driver
 						* Power Mos
 						* Constant Gm
 						* OPAMP
@@ -100,32 +118,69 @@
 					</script>
 					</section>
 					<section > 
-						<b style="font-size:250%;">Logic Gates</b>
+						<b style="font-size:200%;">Logic Gates & Gate Driver</b>
 					</section>
 					<section >
 						<b style="font-size:250%;">OR Gate</b></br>
 						<img src="img/logic/OR_sch.png" height= "450">
 						<img src="img/logic/OR.png" height = "450">
 					</section>
-					<section data-transition = "none">
+					<section >
 						<b style="font-size:250%;">OR Gate</b></br>
 						<img src="img/logic/OR_sch_1.png" height= "450">
 						<img src="img/logic/OR_layout_1.png" height = "450">
 					</section>
-					<section >
+					<!-- <section data-transition = "none">
 						<b style="font-size:250%;">AND Gate</b></br>
 							<img src="img/logic/AND_sch.png" height="450">
 							<img src="img/logic/AND.png" height="450">
-					</section>
-					<section data-transition = "none">
+					</section> -->
+					<section>
+						<div>
 						<b style="font-size:250%;">AND Gate</b></br>
-						<img src="img/logic/AND_sch_1.png" height="450">
-						<img src="img/logic/AND_layout_1.png" height="450">
+						</div>
+						<div class="container">
+						<img  src="img/logic/AND_sch_1.png" height="470" style="float: left;" >
+							<div style="top: 0%; left: 0% float: left; position: absolute;">
+								<img src="img/logic/AND_sch.png" height="470">
+							</div>
+							<div style="top: 0%; left: 0% float: left; position: absolute;">
+								<img class="fragment current-visible" data-fragment-index = "1" src="img/logic/AND_sch_1.png" height="470">
+							</div>
+							<!-- <img  src="img/logic/AND_sch_1.png" height="470" style="float: left;" > -->
+							<div style="top: 0%; right: 0%; float: right; position: absolute;">
+								<img src="img/logic/AND.png" height="470">
+							</div>
+							<div style="top: 0%; right: 0%; float: right; position: absolute;">
+								<img class="fragment current-visible" data-fragment-index = "1" src="img/logic/AND_layout_1.png" height="470">
+							</div>
+							
+						</div>
 					</section>
-					<section>
-						<b style="font-size:250%;">Gate Driver</b>
+					<section >
+						<b style="font-size:250%;">Gate Driver</b></br>
+						<!-- <div style="height: 100%;"> -->
+						<img src="img/logic/Gate_Driver_sch.png" height="250" style='float: left;  '/>
+						<p style="margin-left: 0px;overflow: auto;" >fdkjdsfkjsdlfjsedqfffnfsdknfgks
+						lnfsdwdq\ndkjdsfkjsdlfjsedqf
+						lnfsdwdq\ndkjdsfkjsdlfjsedqf
+						lnfsdwdq\ndkjdsfkjsdlfjsedqf
+						lnfsdwdq\ndkjdsfkjsdlqf</p>
+						<img src="img/logic/Gate_Driver_sch.png" height="250" style='float: left;  '/>
+						<!-- </div> -->
+						<!-- <p>fdkjdsfkjsdlfjsedqfffnfsdknfgkslnfsdwdqdkjdsfkjsdlfjsedqf</p> -->
+							
+						<!-- </div> -->
+						<!-- <img align="left"  src="img/logic/Gate_Driver.png" height="100">  -->
+						<!-- <div class="container">
+							<img class="topleft" src="img/logic/Gate_Driver_sch.png" height="200"></br>
+							<img class="downleft" src="img/logic/Gate_Driver.png" height="200">
+							<div>
+							<p class="topright">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
+							</div>
+						</div> -->
 					</section>
-					<section>
+					<section >
 						<b style="font-size:250%;">Power Mos</b>
 					</section>
 					<section>
