@@ -52,6 +52,11 @@
 			right: 0%;
 		}
 
+		.buck_li{
+			/*font-size: 5px;*/
+			text-align: left;
+		}
+
 
 		img{
 			/*max-width: 100%;
@@ -81,7 +86,7 @@
 			<div class="slides">
 
 				<section> <!-- 1-1 -->
-					<section>
+					<section >
 						<h1 >PMIC Presentation</h1>
 						<img src = "img/Buck/Buck_layout.png" width = "350">
 						<p>0650181劉詠謙</p>
@@ -90,17 +95,11 @@
 					<section> <!-- 1-2 -->
 						<h1>目錄</h1>
 						<ul class ="my_li">
-							<li class = "fragment">xxx 介紹</li>
 							<li class = "fragment">分塊介紹</li>
 							<li class = "fragment">組成chip</li>
 							<li class = "fragment">模擬結果</li>
 							<li class = "fragment">啟發</li>
 						</ul>
-					</section>
-				</section>
-				<section> <!-- 2-1 -->
-					<section>
-						<h>xxx 介紹</h>
 					</section>
 				</section>
 				<section>
@@ -110,15 +109,11 @@
 						* Logic Gates
 							- OR Gate
 							- AND Gate
-							- Gate Driver
+						* Gate Driver
 						* Power Mos
 						* Constant Gm
 						* OPAMP
-						* Comparator
 					</script>
-					</section>
-					<section > 
-						<b style="font-size:200%;">Logic Gates & Gate Driver</b>
 					</section>
 	
 					<section>
@@ -195,24 +190,117 @@
 					</section>
 					<section >
 						<b style="font-size:250%;">Power Mos</b>
+						<div class="container" style="width: 1000px; height: 550px;">
+							<div style="position: absolute; left: 150px">
+								<img src="img/Power_Mos/Power_Mos.png" width="700px" class="fragment fade-out" data-fragment-index="1">
+							</div>
+							<div style="position: absolute; left: 150px">
+								<img src="img/Power_Mos/Power_Mos_1.png" width="700px" class="fragment" data-fragment-index="1">
+							</div>
+						</div>
 					</section>
 					<section>
 						<b style="font-size:250%;">Constant Gm</b></br>
-						<img src="img/Constant_gm/Constant_gm.png" width="600">
+						<div class="container" style="width: 1050px; height: 550px;">
+
+							<div style="position: absolute;">
+								<img src="img/Constant_gm/Constant_gm_sch_1.png" height= "500px" style="float: left">
+							</div>
+							<div style="position: absolute; left: 300px">
+								<img src="img/Constant_gm/Constant_gm_1.png" height= "500px" style="float: right">
+							</div>
+							<div style="position: absolute;">
+								<img class="fragment fade-out" data-fragment-index = "1" src="img/Constant_gm/Constant_gm_sch.png" height= "500px" style="float: left">
+							</div>
+							<div style="position: absolute; left: 300px">
+								<img class="fragment fade-out" data-fragment-index = "1" src="img/Constant_gm/Constant_gm.png" height= "500px" style="float: right">
+							</div>
+						</div>
+					</section>
+					<section>
+						<b style="font-size:250%;">Constant Gm</b></br>
+						<div class="container" style="width: 1000px; height: 600px">
+						 	<div style="position: absolute; left :250px">
+								<img src="img/Constant_gm/Constant_gm_mirror_1.png" width = "450px">
+							</div>
+							<div style="position: absolute; left :250px">
+								<img class="fragment fade-out" src="img/Constant_gm/Constant_gm_mirror.png" width= "450px">
+							</div>
+						</div>
 					</section>
 					<section>
 						<b style="font-size:250%;">OPAMP</b>
+						<p>Differential Amplifier</p>
+						<div class="container" style="width: 1000px; height: 600px">
+						 	<div style="position: absolute;">
+								<img src="img/OPAMP/OPAMP_diff_amp_1.png" width = "1000px">
+							</div>
+							<div style="position: absolute;">
+								<img class="fragment fade-out" src="img/OPAMP/OPAMP_diff_amp.png" width= "1000px">
+							</div>
+						</div>
 					</section>
-					<section>
+					<!-- <section>
 						<b style="font-size:250%;">Comparator</b>
-					</section>
-					<section>
-						<h1>OPAMP</h1>
-					</section>
+					</section> -->
 				</section>
 				<section>
 					<section> <!-- 4-1 -->
 						<h1>組成chip</h1>
+					</section>
+					<section>
+						<h1>chip</h1>
+						<div class="container" style="width: 1000px; height: 600px";>
+							<div style="position: absolute; left: 0px">
+								<img class="fragment fade-out" data-fragment-index = "1" src="img/Buck/Buck_layout_1.png" width = "500px">
+							</div>
+							<div style="position: absolute; left: 0px">
+								<img class="fragment current-visible" data-fragment-index = "1" src="img/Buck/Buck_layout_2.png" width = "500px">
+							</div>
+							<div style="position: absolute; left: 0px">
+								<img class="fragment current-visible" data-fragment-index = "2" src="img/Buck/Buck_layout_3.png" width = "500px">
+							</div>
+							<div style="position: absolute; left: 0px">
+								<img class="fragment current-visible" data-fragment-index = "3" src="img/Buck/Buck_layout_4.png" width = "500px">
+							</div>
+							<div style="position: absolute; left: 0px">
+								<img class="fragment current-visible" data-fragment-index = "4" src="img/Buck/Buck_layout_5.png" width = "500px">
+							</div>
+							<div style="position: absolute; left: 0px">
+								<img class="fragment current-visible" data-fragment-index = "5" src="img/Buck/Buck_layout_6.png" width = "500px">
+							</div>
+							<div style="position: absolute; left: 0px">
+								<img class="fragment" data-fragment-index = "6" src="img/Buck/Buck_layout_7.png" width = "500px">
+							</div>
+							<div style="margin-left: 500px">
+							<ul style="float: left">
+							<li class="buck_li fragment" data-fragment-index = "1"  style="color: #00E639; font-size: 80%;">Logic Gates & Gate Drivers</li>
+							<li class="buck_li fragment" data-fragment-index = "2" style="color: #00F0D4; font-size: 80%;">Power Mos</li>
+							<li class="buck_li fragment" data-fragment-index = "3" style="color: #F7E702; font-size: 80%;">Constant Gm</li>
+							<li class="buck_li fragment" data-fragment-index = "4" style="color: #E72EFF; font-size: 80%;">OPAMP</li>
+							<li class="buck_li fragment" data-fragment-index = "5" style="color: #4C00F0; font-size: 80%;">Comparator</li>
+							<li class="buck_li fragment" data-fragment-index = "6" style=" font-size: 80%;">Dummy</li>
+							</ul>
+							</div>
+							<div style="position: absolute; left: 700px; top: 30px">
+								<img class="fragment current-visible" data-fragment-index = "3"  src="img/Buck/Constant_gm_re.png" height="450px">
+							</div>
+							<div style="position: absolute; left: 500px; top: 170px">
+								<img class="fragment current-visible" data-fragment-index = "4"  src="img/Buck/OPAMP_re_1.png" height="300px">
+							</div>
+							<div style="position: absolute; left: 700px; top: 30px">
+								<img class="fragment current-visible" data-fragment-index = "5"  src="img/Buck/Comparator_re.png" height="420px">
+							</div>
+						</div>
+					</section>
+					<section>
+						<h1>chip</h1>
+						<img  src="img/Buck/buck_2.png" height="500px">
+					</section>
+				</section>
+				<section> 
+					<section> <!-- 5-1 -->
+						<h1>模擬結果</h1>
 					</section>
 				</section>
 				<section> 
